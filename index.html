@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Track</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AWS Track</h1>
+        <p class="subtitle">Random routes around the planet</p>
+
+        <div class="palette-selector">
+            <p class="palette-hint">Change colors</p>
+            <button class="palette-btn" data-palette="aws">AWS</button>
+            <button class="palette-btn active" data-palette="warm">Dark</button>
+            <button class="palette-btn" data-palette="cool">Mix</button>
+        </div>
+
+        <div class="card">
+            <button id="generateBtn" class="generate-btn">Generate Track</button>
+
+            <div id="trackResult" class="track-result hidden">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div class="step-content">
+                        <div id="americaRegion" class="region-name"></div>
+                        <div class="continent">Americas</div>
+                    </div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div class="step-content">
+                        <div id="europeRegion" class="region-name"></div>
+                        <div class="continent">Europe</div>
+                    </div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div class="step-content">
+                        <div id="asiaRegion" class="region-name"></div>
+                        <div class="continent">Asia Pacific</div>
+                    </div>
+                </div>
+
+                <div class="arrow">↓</div>
+
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <div class="step-content">
+                        <div id="returnRegion" class="region-name"></div>
+                        <div class="continent">Return Home</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
